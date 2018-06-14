@@ -36,7 +36,6 @@ class App extends Component {
     for (let i = 0; i < numDaysInMonth; i++) {
       days.push(<Month dayNum={i + 1} day={dayNames[(i + startDay) % 7]} />);
     }
-    console.log(this.state.monthNum);
     return (
       <div>
         <select className="month-select" onChange={e => this.setState({ monthNum: e.target.value })}>
